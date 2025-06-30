@@ -2,13 +2,13 @@
 
 alfabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-def UnosKljuca():
+def UnosKljuca() -> None:
     global kljuc
     kljuc = int(input("Unesite kljuc [1, 25]: "))
     while kljuc>25 or kljuc<1:
         print("Pogresan unos...")
         UnosKljuca()
-def main():
+def main() -> None:
     print()
     opcije = int(input("Da li zelite da 1. sifrujete ili 2. desifrujete? (ili unesite 0 za izlazak iz programa)\n>> "))
     if opcije == 0:
